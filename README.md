@@ -19,12 +19,16 @@ Running
 ==========
 
 Usage: jira_export.rb [options]
+
     -s, --server_url server_url      Server URL
+
     -u, --user user                  User Name
+
     -p, --password password          Password
+
     -f, --filter filterid            Filter Id to be used for export
 
-$>ruby jira_export.rb -s <server_url> -u <user> -p <password> -f <filter id>
+$>ruby jira_export.rb -s < server_url > -u < user > -p < password > -f < filter id >
 
 All jira information will be exported to standard output in csv format. 
 You can redirect output to a file and later use the file to import issues on destination JIRA server. Follow CSV import flow on destination JIRA server.
